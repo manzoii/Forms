@@ -88,3 +88,9 @@ button:hover {
 button:active {
     background-color: #2f2219;
 }
+#credit{
+    position: absolute;
+    margin-top: 90vh;
+    color: #2f2219;
+    margin-left: 30vh;
+}
