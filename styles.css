@@ -3,33 +3,45 @@ body{
     display: flex;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
-    /* max-width: 100vw; */
     max-height: 100vw;
     margin-left: 20vw;
 }
-#logo{
+#logo-div{
     position: absolute;
+    display: flex;
+    margin-bottom: 80vh;
+    margin-left: 45px;
+}
+#logo-text{
+    padding-top: 30px;
+}
+
+#logo{
     width: 80px;
     height: auto;
     color: black;
-    margin-top: 50px;
-    margin-left: 50px;
 }
 #background{
     width :625px; 
     height :auto;
 }
 #top{
-    margin-top: 5vh;
+    /* margin-top: 5vh; */
     padding-left: 50px;
 }
 form{
     margin-top: 8vh;
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
+    background-color: #cdc0a6;
+    padding-right: 100%;
+    box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.2);
+      
 }
+
 #button{
-    margin-top: 10vh;
+    margin-top: 7vh;
     padding-left: 50px;
 }
 .sub-form{
@@ -38,15 +50,41 @@ form{
     flex-direction: row;
     justify-content: space-between;
 }
- input{
+input{
     width: 250px;
-    height: 25px;
+    height: 35px;
     border-radius: 5px;
-    border: 1px ;
+    border: 1px solid;
+}
+input:focus {
+    outline: none;
+    border: 2px solid darkgreen;
 }
 
+input:focus:invalid {
+    border: 2px solid red;
+    background-color: #fff0f0;
+}
+  
 .item{
     display: flex;
     flex-direction: column;
     margin-left: 50px;
+}
+button{
+    background-color: #3f3019;
+    color: white;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #8b8168;
+}
+
+button:active {
+    background-color: #2f2219;
 }
